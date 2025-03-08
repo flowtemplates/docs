@@ -17,12 +17,12 @@ jobs:
         with:
           node-version: 18
           cache: pnpm
-
       - name: Install pnpm
-        run: corepack enable && pnpm install --frozen-lockfile
+        run: npm install -g pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
       - name: Build website
         run: pnpm build
-
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
