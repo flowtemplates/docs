@@ -1,0 +1,60 @@
+span.token.punctuation {
+  color: #ffd017 !important;
+}
+
+span.token.comment {
+  color: #5d647e !important;
+}
+
+span.token.keyword {
+  color: #5de4c7 !important;
+  font-style: italic;
+}
+
+span.token.operator {
+  color: #91b4d5 !important;
+}
+
+span.token.forging,
+span.token.number,
+span.token.boolean {
+  color: #9fd7ff !important;
+}
+
+span.token.pipe {
+  color: #a6accd !important;
+}
+
+span.token.filterIdentifier {
+  color: #5de4c7 !important;
+  font-style: italic;
+}
+
+pre.language-ft {
+  border-bottom-left-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+}
+
+.language-ft.theme-code-block {
+  border-radius: 14px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+}
+
+.language-ft {
+  background-color: #1b1e28 !important;
+}
+
+code {
+  padding: 8px 16px !important;
+}
+
+.language-ft.theme-code-block > div:first-of-type {
+  background-color: red !important;
+  color: white !important;
+  padding: 4px 16px;
+}
+
+li > code,
+p > code {
+  padding: 2px 3px !important;
+}

@@ -1,0 +1,35 @@
+
+.navbar {
+    background-color: var(--tf-red);
+  }
+
+  .navbar button {
+    color: white;
+    &:hover {
+      color: red;
+      background: white;
+    }
+  }
+
+  .navbar__title {
+    color: white;
+    font-weight: 700;
+    &:hover {
+      color: white;
+    }
+  }
+
+  .navbar__link {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+
+  .navbar__link > svg {
+    display: none;
+  }
+
+  .navbar__toggle {
+    color: white;
+  }
