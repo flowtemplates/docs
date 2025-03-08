@@ -2,17 +2,15 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const config: Config = {
   title: "Templates Flow",
   tagline: "Modern tool for component code generation",
   favicon: "brand/logo_icon.svg",
 
-  url: "https://templatesflow.github.io",
+  url: "https://flowtemplates.github.io",
   baseUrl: "/docs/",
 
-  organizationName: "templatesflow",
+  organizationName: "flowtemplates",
   projectName: "docs",
 
   onBrokenLinks: "throw",
@@ -30,7 +28,7 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           editUrl:
-            "https://github.com/templatesflow/doc/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/flowtemplates/doc/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -55,7 +53,7 @@ const config: Config = {
           label: "Documentation",
         },
         {
-          href: "https://github.com/templatesflow/docs",
+          href: "https://github.com/flowtemplates/docs",
           label: "GitHub",
           position: "right",
         },
