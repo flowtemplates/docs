@@ -8,7 +8,7 @@ const config: Config = {
   favicon: "brand/logo_icon.svg",
 
   url: "https://flowtemplates.github.io",
-  baseUrl: "/docs/",
+  baseUrl: "docs/",
 
   organizationName: "flowtemplates",
   projectName: "docs",
