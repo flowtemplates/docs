@@ -27,7 +27,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          editUrl: "https://github.com/flowtemplates/docs/tree/main/",
+          editUrl: "https://github.com/flowtemplates/docs/edit/main/",
         },
         theme: {
           customCss: "./src/css/custom.css",
