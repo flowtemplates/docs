@@ -1,4 +1,5 @@
-.navbar {
+.navbar,
+.navbar-sidebar__brand {
   background-color: var(--ft-red);
 }
 
@@ -38,6 +39,19 @@
   }
 }
 
-.navbar__toggle {
-  color: white;
+.navbar__toggle,
+.navbar-sidebar__close {
+  color: white !important;
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+
+.navbar-sidebar__back {
+  color: var(--ifm-menu-color) !important;
+  background: none;
+  &:hover {
+    color: var(--ft-red) !important;
+    background: none !important;
+  }
 }

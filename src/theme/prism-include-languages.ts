@@ -11,30 +11,19 @@ export default function prismIncludeLanguages(
   } = siteConfig;
   const { additionalLanguages } = prism as { additionalLanguages: string[] };
 
-  // Prism components work on the Prism instance on the window, while prism-
-  // react-renderer uses its own Prism instance. We temporarily mount the
-  // instance onto window, import components to enhance it, then remove it to
-  // avoid polluting global namespace.
-  // You can mutate PrismObject: registering plugins, deleting languages... As
-  // long as you don't re-assign it
-
   const PrismBefore = globalThis.Prism;
   globalThis.Prism = PrismObject;
 
-  additionalLanguages.forEach((lang) => {
+  for (const lang of additionalLanguages) {
     if (lang === "ft") {
-      require("../templatesflow/ft-prism.ts");
+      require("../flowtemplates/ft-prism.ts");
     } else {
-      // eslint-disable-next-line global-require, import/no-dynamic-require
       require(`prismjs/components/prism-${lang}`);
     }
-  });
+  }
 
-  // Clean up and eventually restore former globalThis.Prism object (if any)
   delete (globalThis as Optional<typeof globalThis, "Prism">).Prism;
   if (typeof PrismBefore !== "undefined") {
     globalThis.Prism = PrismObject;
   }
 }
-
-console.log(Prism.languages);

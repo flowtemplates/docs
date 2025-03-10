@@ -3,7 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "Templates Flow",
+  title: "Flow Templates",
   tagline: "Modern tool for component code generation",
   favicon: "brand/logo_icon.svg",
 
@@ -26,7 +26,7 @@ const config: Config = {
       "classic",
       {
         docs: {
-          sidebarPath: "./sidebars/docs-sidebars.ts",
+          sidebarPath: "./sidebars.ts",
           editUrl: "https://github.com/flowtemplates/docs/edit/main/",
         },
         theme: {
@@ -36,71 +36,20 @@ const config: Config = {
     ],
   ],
 
-  plugins: [
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "cli",
-        path: "cli",
-        routeBasePath: "cli",
-        sidebarPath: "./sidebars/cli-sidebars.ts",
-        editUrl: "https://github.com/flowtemplates/docs/edit/main/",
-        versions: {
-          current: {
-            label: "1.0.0 (beta)",
-          },
-          "1.0.0": {
-            label: "1.0.0",
-          },
-        },
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "lang",
-        path: "lang",
-        routeBasePath: "lang",
-        sidebarPath: "./sidebars/lang-sidebars.ts",
-        editUrl: "https://github.com/flowtemplates/docs/edit/main/",
-        versions: {
-          current: {
-            label: "1.0 (beta)",
-          },
-          "1.0": {
-            label: "1.0",
-          },
-        },
-      },
-    ],
-  ],
-
   themeConfig: {
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "Templates Flow",
+      title: "Flow Templates",
       logo: {
-        alt: "Templates FLow",
-        src: "brand/logo_white.png",
+        alt: "Flow Templates",
+        src: "brand/logo_white.svg",
       },
       items: [
         {
-          to: "/cli/intro",
-          label: "Flow CLI",
-          position: "left",
-        },
-        {
-          type: "docsVersionDropdown",
-          docsPluginId: "cli",
-        },
-        {
-          to: "/lang/intro",
-          label: "Templates Language",
-          position: "left",
-        },
-        {
-          type: "docsVersionDropdown",
-          docsPluginId: "lang",
+          type: "docSidebar",
+          sidebarId: "docsSidebar",
+          position: "right",
+          label: "Documentation",
         },
         {
           href: "https://github.com/flowtemplates/docs",
