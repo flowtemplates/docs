@@ -1,6 +1,6 @@
 
 .navbar {
-    background-color: var(--tf-red);
+    background-color: var(--ft-red);
   }
 
   .navbar button {
@@ -21,6 +21,7 @@
 
   .navbar__link {
     color: white;
+    border-radius: 12px;
     &:hover {
       color: white;
     }
@@ -28,6 +29,14 @@
 
   .navbar__link > svg {
     display: none;
+  }
+
+  .navbar__link--active {
+    background-color: var(--ft-white);
+    color: var(--ft-red);
+    &:hover {
+      color: var(--ft-red);
+    }
   }
 
   .navbar__toggle {

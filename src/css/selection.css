@@ -9,6 +9,6 @@ li,
 div {
     &::selection {
         color: white;
-        background-color: var(--tf-red);
+        background-color: var(--ft-red);
     }
 }

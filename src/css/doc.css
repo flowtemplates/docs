@@ -40,3 +40,11 @@ a.pagination-nav__link {
 .theme-admonition {
   border-radius: 12px !important;
 }
+
+/* Version */
+
+.theme-doc-version-badge {
+  background-color: var(--ft-red);
+  color: var(--ft-white);
+  border: none;
+}

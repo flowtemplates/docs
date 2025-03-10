@@ -6,7 +6,8 @@
 @import "./ft.css";
 
 :root {
-  --tf-red: #ff1e30;
+  --ft-red: #ff1e30;
+  --ft-white: white;
 
   --ifm-color-primary: #ff1e30;
   --ifm-color-primary-dark: #ff0116;
