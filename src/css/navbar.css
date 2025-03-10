@@ -1,44 +1,43 @@
-
 .navbar {
-    background-color: var(--ft-red);
-  }
+  background-color: var(--ft-red);
+}
 
-  .navbar button {
+.navbar button {
+  color: white;
+  &:hover {
+    color: red;
+    background: white;
+  }
+}
+
+.navbar__title {
+  color: white;
+  font-weight: 700;
+  &:hover {
     color: white;
-    &:hover {
-      color: red;
-      background: white;
-    }
   }
+}
 
-  .navbar__title {
+.navbar__link {
+  color: white;
+  border-radius: 12px;
+  &:hover {
     color: white;
-    font-weight: 700;
-    &:hover {
-      color: white;
-    }
   }
+}
 
-  .navbar__link {
-    color: white;
-    border-radius: 12px;
-    &:hover {
-      color: white;
-    }
-  }
+.navbar__link > svg {
+  display: none;
+}
 
-  .navbar__link > svg {
-    display: none;
-  }
-
-  .navbar__link--active {
-    background-color: var(--ft-white);
+.navbar__link--active {
+  background-color: var(--ft-white);
+  color: var(--ft-red);
+  &:hover {
     color: var(--ft-red);
-    &:hover {
-      color: var(--ft-red);
-    }
   }
+}
 
-  .navbar__toggle {
-    color: white;
-  }
+.navbar__toggle {
+  color: white;
+}

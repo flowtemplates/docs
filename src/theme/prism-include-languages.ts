@@ -4,7 +4,7 @@ import type { Optional } from "utility-types";
 import Prism from "prismjs";
 
 export default function prismIncludeLanguages(
-  PrismObject: typeof PrismNamespace
+  PrismObject: typeof PrismNamespace,
 ): void {
   const {
     themeConfig: { prism },

@@ -7,8 +7,8 @@ p,
 a,
 li,
 div {
-    &::selection {
-        color: white;
-        background-color: var(--ft-red);
-    }
+  &::selection {
+    color: white;
+    background-color: var(--ft-red);
+  }
 }
