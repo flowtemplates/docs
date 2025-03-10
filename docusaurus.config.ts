@@ -44,7 +44,7 @@ const config: Config = {
         path: "cli",
         routeBasePath: "cli",
         sidebarPath: "./sidebars/cli-sidebars.ts",
-        editUrl: "https://github.com/flowtemplates/docs/edit/main/cli/",
+        editUrl: "https://github.com/flowtemplates/docs/edit/main/",
         versions: {
           current: {
             label: "1.0.0 (beta)",
@@ -62,7 +62,7 @@ const config: Config = {
         path: "lang",
         routeBasePath: "lang",
         sidebarPath: "./sidebars/lang-sidebars.ts",
-        editUrl: "https://github.com/flowtemplates/docs/edit/main/lang/",
+        editUrl: "https://github.com/flowtemplates/docs/edit/main/",
         versions: {
           current: {
             label: "1.0 (beta)",
