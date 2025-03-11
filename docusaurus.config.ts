@@ -55,7 +55,7 @@ const config: Config = {
         },
         /* Social links */
         {
-          href: "https://github.com/flowtemplates/docs",
+          href: "https://github.com/flowtemplates",
           label: "GitHub",
           position: "right",
         },
