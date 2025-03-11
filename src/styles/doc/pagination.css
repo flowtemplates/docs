@@ -1,0 +1,26 @@
+nav.pagination-nav {
+  margin: 16px 0 0;
+  gap: 8px;
+}
+
+nav.pagination-nav a.pagination-nav__link {
+  --time: .2s;
+
+  border-radius: 12px;
+  transition: border-color var(--time) ease;
+
+  padding: 16px 16px;
+
+  &:hover {
+    border-color: var(--ft-red);
+  }
+}
+
+nav.pagination-nav a.pagination-nav__link div.pagination-nav__sublabel {
+  font-size: 14px;
+  user-select: none;
+}
+
+nav.pagination-nav a.pagination-nav__link div.pagination-nav__label {
+  font-size: 20px;
+}

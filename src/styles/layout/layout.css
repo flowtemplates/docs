@@ -1,0 +1,6 @@
+button.clean-btn.theme-back-to-top-button {
+  --time: .2s;
+
+  border-radius: 12px;
+  transition: background-color var(--time) ease;
+}

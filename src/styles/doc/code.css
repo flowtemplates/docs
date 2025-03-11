@@ -1,0 +1,68 @@
+/* Code block */
+
+div.theme-code-block {
+  border-radius: 12px;
+}
+
+div.theme-code-block code {
+  border-radius: 0;
+}
+
+/* Language */
+:root {
+  --code-ft-bg: #f0f0f0;
+  --code-ft-comment: #5d647e;
+  --code-ft-punctuation: #ffd017;
+  --code-ft-keyword: #5de4c7;
+  --code-ft-operator: #91b4d5;
+  --code-ft-pipe: #a6accd;
+  --code-ft-pipe-identifier: #5de4c7;
+  --code-ft-meaning: #9fd7ff;
+}
+
+[data-theme="dark"] {
+  --code-ft-bg: #262833;
+}
+
+div.theme-code-block.language-ft code {
+  background-color: var(--code-ft-bg);
+}
+
+.language-ft span {
+  font-style: normal !important;
+}
+
+.language-ft span.token {
+  &.comment {
+    color: var(--code-ft-comment) !important;
+    font-style: normal !important;
+  }
+}
+
+.language-ft span.token.block {
+  &.punctuation {
+    color: var(--code-ft-punctuation) !important;
+  }
+
+  &.keyword {
+    color: var(--code-ft-keyword) !important;
+  }
+
+  &.operator {
+    color: var(--code-ft-operator) !important;
+  }
+
+  &.forging,
+  &.number,
+  &.boolean {
+    color: var(--code-ft-meaning) !important;
+  }
+
+  &.pipe {
+    color: var(--code-ft-pipe) !important;
+  }
+
+  &.pipe.filterIdentifier {
+    color: var(--code-ft-pipe-identifier) !important;
+  }
+}

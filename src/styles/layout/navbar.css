@@ -1,0 +1,61 @@
+.navbar,
+.navbar-sidebar__brand {
+  background-color: var(--ft-red);
+}
+
+/* Logo */
+
+.navbar__brand {
+  margin-right: 36px;
+}
+
+.navbar__title {
+  font-weight: 700;
+  font-size: 18px;
+
+  color: var(--ft-white);
+  &:hover {
+    color: var(--ft-white);
+  }
+}
+
+/* Links */
+
+.navbar__link {
+  --time: 0.2s;
+
+  font-weight: 600;
+  border-radius: 12px;
+  transition: background-color var(--time) ease, color var(--time) ease;
+  color: var(--ft-white);
+  user-select: none;
+
+  &:hover {
+    color: var(--ft-red);
+    background-color: var(--ft-white);
+  }
+}
+
+.navbar__link--active {
+  background-color: var(--ft-white);
+  color: var(--ft-red);
+}
+
+.navbar__link svg {
+  display: none;
+}
+
+/* Theme switch */
+
+.navbar button.clean-btn {
+  --time: 0.2s;
+
+  transition: background-color var(--time) ease, color var(--time) ease;
+  border-radius: 12px;
+  color: var(--ft-white);
+
+  &:hover {
+    background-color: var(--ft-white);
+    color: var(--ft-red);
+  }
+}

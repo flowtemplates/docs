@@ -3,8 +3,8 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "Flow Templates",
-  tagline: "Modern tool for component code generation",
+  title: "Flow",
+  tagline: "Modern toolchain for component code generation",
   favicon: "brand/logo_icon.svg",
 
   url: "https://flowtemplates.github.io",
@@ -29,8 +29,12 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           editUrl: "https://github.com/flowtemplates/docs/edit/main/",
         },
+        blog: {
+          showReadingTime: true,
+          routeBasePath: "changelog",
+        },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: "./src/styles/index.css",
         },
       } satisfies Preset.Options,
     ],
@@ -39,21 +43,28 @@ const config: Config = {
   themeConfig: {
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "Flow Templates",
+      title: "Flow",
       logo: {
-        alt: "Flow Templates",
+        alt: "Flow",
         src: "brand/logo_white.svg",
       },
       items: [
+        /* Documents */
         {
           type: "docSidebar",
           sidebarId: "docsSidebar",
-          position: "right",
           label: "Documentation",
+          position: "left",
         },
+        /* Social links */
         {
           href: "https://github.com/flowtemplates/docs",
           label: "GitHub",
+          position: "right",
+        },
+        {
+          href: "https://discord.gg/QZJB5tyxtc",
+          label: "Discord",
           position: "right",
         },
       ],

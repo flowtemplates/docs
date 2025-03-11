@@ -1,0 +1,14 @@
+nav.menu div.menu__list-item-collapsible button.menu__caret {
+  &:hover {
+    background: none;
+  }
+}
+
+nav.menu ul.menu__list li.menu__list-item {
+  --time: 0.2s;
+
+  font-weight: 600;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color var(--time) ease, color var(--time) ease;
+}

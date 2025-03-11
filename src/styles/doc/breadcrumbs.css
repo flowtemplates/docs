@@ -1,0 +1,24 @@
+nav.theme-doc-breadcrumbs span.breadcrumbs__link {
+  background: none;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+nav.theme-doc-breadcrumbs a.breadcrumbs__link {
+  --time: 0.2s;
+
+  font-weight: 500;
+
+  transition: color var(--time) ease;
+  &:hover {
+    cursor: pointer;
+    background: none;
+  }
+}
+
+nav.theme-doc-breadcrumbs li.breadcrumbs__item::after {
+  margin: 0;
+}

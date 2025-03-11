@@ -1,0 +1,6 @@
+ul.table-of-contents a.table-of-contents__link {
+  --time: 0.2s;
+
+  transition: color var(--time) ease;
+  font-weight: 500;
+}
