@@ -29,10 +29,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           editUrl: "https://github.com/flowtemplates/docs/edit/main/",
         },
-        blog: {
-          showReadingTime: true,
-          routeBasePath: "changelog",
-        },
+        /* Add custom css */
         theme: {
           customCss: "./src/styles/index.css",
         },
@@ -69,6 +66,7 @@ const config: Config = {
         },
       ],
     },
+    /* Adding FT language fot code blocks */
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

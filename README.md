@@ -1,1 +1,1 @@
-# Flow Templates documentation
+# Flow documentation
