@@ -3,3 +3,78 @@ sidebar_position: 100
 sidebar_label: Cheat sheet
 title: Cheat sheet
 ---
+
+Allows you to easily recall existing language constructs.
+
+```ft
+
+{# expressions #}
+{{ name }}
+{{ false }}
+{{ 1 }}
+{{ -1.2 }}
+{{ "foo" }}
+
+{# operations evaluating #}
+{{ my_num + 2 }}
+
+{# bool results are not displayed as in jsx, which allows this #}
+{{ flag && name }}
+
+{# predefined variables #}
+{{ date }}
+{{ second }}
+{{ minute }}
+{{ hour }}
+{{ time }}
+{{ day }}
+{{ month }}
+{{ year }}
+
+
+{# filters #}
+{{ "hello world" -> snake }}  hello_world
+{{ "hello world" -> camel }}  helloWorld
+{{ "hello world" -> pascal }} HelloWorld
+{{ "hello world" -> kebab }}  hello-world
+{{ "hello world" -> title }}  Hello World
+{{ "hello world" -> capitalize }}  Hello world
+{{ "hello world" -> upper }}  HELLO WORLD
+{{ "hello world" -> lower }}  hello world
+{{ "hello world" -> length }}  11
+
+{{ ("12" -> number) * 2 }}  24
+
+{{ "12" * 2 }}  24
+{{ "a" * 2 }}  undefined
+
+{# filters chain #}
+{{ "hello world" -> lower -> kebab }}  hello-world
+
+{# if/else statement #}
+{% if some_num > 10 || some_num %}
+{% else if some_num <= 2 && flag %}
+{% else if (some_num != 2 or flag) and another_flag %}
+{% else %}
+{% end %}
+
+
+{# genif statement #}
+{% genif flag %}
+
+
+{# switch statement #}
+{% switch some_var %}
+  {% case "a" %}
+    come content
+  {% case "b" %}
+    other content
+  {% default %}
+    default content
+{% end %}
+
+
+{# ternary operator #}
+{{ some_flag ? "this" : "or that" }}
+{{ some_flag do "this" else "or that" }}
+```
