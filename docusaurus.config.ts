@@ -70,7 +70,8 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ["ft"],
+      defaultLanguage: "ft",
+      additionalLanguages: ["ft", "json"],
     },
   } satisfies Preset.ThemeConfig,
 };

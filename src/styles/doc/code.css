@@ -18,10 +18,17 @@ div.theme-code-block code {
   --code-ft-pipe: #a6accd;
   --code-ft-pipe-identifier: #5de4c7;
   --code-ft-meaning: #9fd7ff;
+  /* JSON */
+  --code-json-bg: #f0f0f0;
+  --code-json-meaning: #5de4c7;
+  --code-json-property: #fff;
+  --code-json-punctuation: #ffd017;
 }
 
 [data-theme="dark"] {
   --code-ft-bg: #262833;
+  /* JSON */
+  --code-json-bg: #262833;
 }
 
 div.theme-code-block.language-ft code {
@@ -64,5 +71,25 @@ div.theme-code-block.language-ft code {
 
   &.pipe.filterIdentifier {
     color: var(--code-ft-pipe-identifier) !important;
+  }
+}
+
+/* JSON */
+
+.language-json span.token {
+  font-style: normal;
+}
+
+.language-json span.token {
+  &.property {
+    color: var(--code-json-property) !important;
+  }
+
+  &.punctuation {
+    color: var(--code-json-punctuation) !important;
+  }
+
+  &.meaning {
+    color: var(--code-json-meaning) !important;
   }
 }

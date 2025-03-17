@@ -1,6 +1,5 @@
 import siteConfig from "@generated/docusaurus.config";
 import type * as PrismNamespace from "prismjs";
-import type { Optional } from "utility-types";
 import Prism from "prismjs";
 
 export default function prismIncludeLanguages(
@@ -15,10 +14,15 @@ export default function prismIncludeLanguages(
   globalThis.Prism = PrismObject;
 
   for (const lang of additionalLanguages) {
-    if (lang === "ft") {
-      require("../flowtemplates/ft-prism.ts");
-    } else {
-      require(`prismjs/components/prism-${lang}`);
+    switch (lang) {
+      case "ft":
+        require("../code-lang/ft.ts");
+        break;
+      case "json":
+        require("../code-lang/json.ts");
+        break;
+      default:
+        require(`prismjs/components/prism-${lang}`);
     }
   }
 
